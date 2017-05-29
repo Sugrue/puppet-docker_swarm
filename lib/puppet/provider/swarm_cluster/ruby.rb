@@ -17,6 +17,7 @@ Puppet::Type.type(:swarm_cluster).provide(:ruby) do
     port = (resource[:port])
     advertise = (resource[:advertise])
     path = (resource[:path])
+    bind = (resource[:bind])
     case
       when cluster.match(/create/)
         [['create']]
